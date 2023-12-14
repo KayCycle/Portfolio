@@ -1,0 +1,378 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/*---global css---*/
+
+body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #e2dfd5;
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    font-size: 80px;
+    color: #054a7e;
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+
+    color: #054a7e;
+} 
+
+h4 {
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #054a7e;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #054a7e;
+}
+
+h6 {
+    color: #054a7e;
+}
+
+.bigtext {
+    color: #054a7e;
+    font-size: 60px;
+}
+
+.small {
+    color: #054a7e;
+}
+
+.imagetrolley {
+    border-radius: 5px;
+}
+
+.highlight {
+    border-bottom: 4px solid #054a7e;
+}
+/*--------header-------*/
+
+#header {
+    padding: 40px 0 70px 0px;
+    background-color: #e2dfd5;
+}
+
+#header span {
+    font-weight: 700;
+}
+
+.custom-navbar {
+    background-color: #e2dfd5;
+    height: 80px;
+}
+
+.custom-ul {
+    text-align: center;
+}
+
+.custom-li {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0px 25px;
+}
+
+.custom-logo{
+    margin-left: 20px;
+    width: 30%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.custom-highlight {
+    color: #054a7e;
+}
+
+.custom-btn {
+    background-color: #ff4f4f;
+    color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.custom-img-width { 
+    width: 100%;
+    height: 100%;
+}
+
+.custom-img-width2 { 
+    width: 50px;
+    height: 100%;
+}
+
+.custom-services-card {
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
+    border-style: solid;
+    background-color: #fffef8
+}
+
+.custom-footer {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-bg {
+    height: 350px;
+    background: #e2dfd5;
+    border-radius: 12px; 
+}
+
+.navbar-transition {
+    transition: 0.5s ease;
+    color: #054a7e;
+}
+
+/*---products---*/
+
+.custom-card {
+    background-color: #fffef8;
+    border-radius: 20px;
+    padding: 12px;
+    border: none;
+    display: flex;
+    transition: 0.3s ease-in;
+    margin: 10px;
+}
+
+.custom-sp-card {
+    margin: auto; 
+}
+
+.custom-card:hover {
+    transform: scale(1.035);
+    transition: 0.2s ease-in;
+}
+
+
+/*---footer---*/
+
+#footer {
+    padding: 25px 0px;
+    background-color: #e2dfd5;
+}
+
+footer h5 {
+    padding: 10px 0;
+}
+
+#footer li a {
+    text-decoration: none;
+}
+
+/*--Card Transition CSS--*/
+
+/*--TRANSITION CSS--*/
+
+.container-special {
+    position: relative;
+}
+
+.container-special .card {
+    height: 600px;
+    width: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container-special .card:before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.container-special .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container-special .card:after {
+    content: 'Kaiden';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 17em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.09);
+}
+
+.container-special .card .imgBx
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s; 
+}
+
+.container-special .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container-special .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 46.8%;
+    transform: translate(-50%,-50%) rotate(+0deg);
+    width: 270px;
+}
+
+.container-special .card .contentBx {
+    position: absolute;
+    bottom: 0; 
+    width: 94.5%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container-special .card:hover .contentBx {
+    height: 320px;
+}
+
+.container-special .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.container-special .card .contentBx .size,
+.container-special .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    padding: 8px 20px;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-special .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container-special .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container-special .card .contentBx .size h3,
+.container-special .card .contentBx .color h3 {
+    color: #000000;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container-special .card .contentBx .size span, 
+.container-special .card .contentBx .color span{
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #111;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-special .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    background-color: #c21111;
+}
+
+.container-special .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+.custom-lang-card {
+    padding-top: 20px;
+}
+
+.custom22 {
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.paddingbottom {
+    padding-bottom: 50px;
+}
+
+.paddingmap {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.customcolor {
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
+    border: none;
+    background-color: #fffef8;
+}
+
+.outline {
+    color: #ffffff;
+}
+
+.imgcs {
+    opacity: 0.2;
+}
+
+
+
+.navbar-collapse {
+    background: #e2dfd5;
+    margin: -.5rem -1rem;
+    padding: .5rem 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .dontmisscards {
+        padding-left: 130px;
+    }
+}
+
+.specialpadding {
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+.backgroundcolor {
+    background-color: #054a7e;
+}
